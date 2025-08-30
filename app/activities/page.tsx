@@ -8,6 +8,8 @@ import { Search } from "lucide-react";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 
+
+
 const allCategories = [
     'semua',
     ...Array.from(new Set(activityData.map((a) => a.category))),

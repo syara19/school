@@ -2,8 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { newsData } from "@/lib/data";
 import { Calendar, User } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "News",
+  };
+  
 
 export default function News() {
     return (

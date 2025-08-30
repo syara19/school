@@ -1,5 +1,10 @@
 import ContactForm from "@/components/ui/contactForm";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacts",
+};
 
 export default function Contact() {
     return (
