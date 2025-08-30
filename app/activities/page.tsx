@@ -86,7 +86,7 @@ export default function Activities() {
                                 <CardTitle className="pt-2 ">{activity.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="flex-grow">
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-sm text-muted-foreground line-clamp-3">
                                     {activity.description}
                                 </p>
                             </CardContent>

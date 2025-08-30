@@ -8,12 +8,28 @@ export default function Footer() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                     <div className="md:col-span-2">
                         <Link href="/" className="mb-4 flex items-center space-x-2">
-                            <School className="h-8 w-8 text-primary" />
-                            <span className="font-bold text-primary">Lorem School</span>
+                            <School  className="h-10 w-10 text-primary" />
+                            <span className="font-bold text-primary text-3xl">Lorem School</span>
                         </Link>
-                        <p className="mt-4 max-w-md text-muted-foreground">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nisi eius minus maiores minima, inventore modi vero quis. Labore adipisci odio, quasi sit explicabo eveniet expedita doloremque voluptatum laudantium vel.
-                        </p>
+                        <div className=" ml-2 flex-col flex space-x-4 gap-6 md:mt-0">
+                            <Link href="#" className="flex text-muted-foreground hover:text-primary">
+                                <Twitter className="h-5 w-5" />
+                                <span className="ml-2">@LoremSchool</span>
+                            </Link>
+                            <Link href="#" className="flex text-muted-foreground hover:text-primary">
+                                <Facebook className="h-5 w-5" />
+                                <span className="ml-2">Lorem School</span>
+                            </Link>
+                            <Link href="#" className="flex text-muted-foreground hover:text-primary">
+                                <Instagram className="h-5 w-5" />
+                                <span className="ml-2">lorem_school</span>
+                            </Link>
+                            <Link href="#" className="flex text-muted-foreground hover:text-primary">
+                                <Youtube className="h-5 w-5" />
+                                <span className="ml-2">Lorem School</span>
+                            </Link>
+                        </div>
+
                     </div>
                     <div>
                         <h3 className="font-semibold tracking-wider text-foreground">
@@ -53,24 +69,11 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="mt-8 flex flex-col items-center justify-between border-t border-border pt-8 md:flex-row">
+                <div className="mt-8 flex flex-col items-center justify-center border-t border-border pt-8 md:flex-row">
                     <p className="text-sm text-muted-foreground">
-                        &copy; {new Date().getFullYear()} Lorem School. 
+                        &copy; {new Date().getFullYear()} Lorem School.
                     </p>
-                    <div className="mt-4 flex space-x-4 md:mt-0">
-                        <Link href="#" className="text-muted-foreground hover:text-primary">
-                            <Twitter className="h-5 w-5" />
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-primary">
-                            <Facebook className="h-5 w-5" />
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-primary">
-                            <Instagram className="h-5 w-5" />
-                        </Link>
-                        <Link href="#" className="text-muted-foreground hover:text-primary">
-                            <Youtube className="h-5 w-5" />
-                        </Link>
-                    </div>
+
                 </div>
             </div>
         </footer>
