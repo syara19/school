@@ -48,7 +48,7 @@ export default function Home() {
                       <Card className="flex h-full pt-0 flex-col overflow-hidden transition-shadow hover:shadow-xl">
                         <div className="relative h-56 w-full">
                           <Image
-                            src="/placeholder.png"
+                            src={news.imageUrl}
                             alt={news.title}
                             fill
                             className="object-cover"
