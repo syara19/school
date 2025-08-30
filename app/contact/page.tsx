@@ -53,7 +53,7 @@ export default function Contact() {
                 </div>
               </div>
               <div >
-                <h2 className="text-2xl font-bold">Kirim Pesan</h2>
+                <h2 className="text-2xl mt-10 md:mt-0  font-bold">Kirim Pesan</h2>
                 <ContactForm />
               </div>
             </div>
