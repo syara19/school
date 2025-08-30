@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { formSchema } from "@/lib/validator";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
@@ -16,6 +17,30 @@ export async function POST(request: Request) {
         message: validatedData.message,
       },
     });
+
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      secure: false,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    const mailOptions = {
+      from: validatedData.email,
+      to: process.env.EMAIL_USER,
+      subject: `Pesan Baru dari ${validatedData.name}`,
+      html: `
+        <h2>Pesan Kontak Baru</h2>
+        <p><strong>Nama:</strong> ${validatedData.name}</p>
+        <p><strong>Email:</strong> ${validatedData.email}</p>
+        <p><strong>Pesan:</strong></p>
+        <p>${validatedData.message}</p>
+      `,
+    };
+
+    await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
       { success: true, message: "Pesan berhasil dikirim!" },
