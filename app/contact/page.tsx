@@ -14,8 +14,8 @@ export default function Contact() {
           </section>
     
           <section className="container mx-auto px-4 py-16">
-            <div className="grid grid-cols-1 gap-12 rounded-lg bg-card p-8 shadow-lg md:grid-cols-2 md:p-12">
-              <div className="flex flex-col justify-center">
+            <div className="grid grid-cols-1  rounded-lg bg-card p-8 shadow-lg md:grid-cols-2 md:p-12">
+              <div className="flex flex-col ">
                 <h2 className="text-2xl font-bold">Informasi Kontak</h2>
                 <p className="mt-2 text-muted-foreground">
                   Anda juga bisa menghubungi kami melalui detail kontak berikut.
@@ -52,7 +52,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div>
+              <div >
                 <h2 className="text-2xl font-bold">Kirim Pesan</h2>
                 <ContactForm />
               </div>

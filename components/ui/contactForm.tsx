@@ -88,7 +88,7 @@ export default function ContactForm() {
                         <FormItem>
                             <FormLabel>Alamat Email</FormLabel>
                             <FormControl>
-                                <Input placeholder="anda@email.com" {...field} />
+                                <Input placeholder="jhondoe@email.com" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                         <FormItem>
                             <FormLabel>Subjek</FormLabel>
                             <FormControl>
-                                <Input placeholder="Pertanyaan tentang pendaftaran" {...field} />
+                                <Input placeholder="Subjek Pertanyaan" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
